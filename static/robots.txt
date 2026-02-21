@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_app/
+
+Sitemap: https://matthewostrowski.com/sitemap.xml

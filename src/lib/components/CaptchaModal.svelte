@@ -42,10 +42,9 @@
 			if (!res.ok) {
 				throw new Error('Verification failed');
 			}
-			const blob = await res.blob();
-			const url = URL.createObjectURL(blob);
-			window.open(url, '_blank');
+			const { url } = await res.json();
 			close();
+			window.location.href = url;
 		} catch {
 			status = 'error';
 			errorMessage = 'Verification failed. Please try again.';

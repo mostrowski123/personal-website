@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
+	import { env } from '$env/dynamic/public';
 
 	let { open = $bindable(false) }: { open: boolean } = $props();
 
@@ -23,7 +23,7 @@
 	function renderWidget() {
 		if (!turnstileEl || widgetId !== undefined) return;
 		widgetId = (window as any).turnstile.render(turnstileEl, {
-			sitekey: PUBLIC_TURNSTILE_SITE_KEY,
+			sitekey: env.PUBLIC_TURNSTILE_SITE_KEY,
 			theme: 'dark',
 			callback: onVerified,
 			'error-callback': onError,

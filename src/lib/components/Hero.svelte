@@ -1,5 +1,8 @@
 <script lang="ts">
 	import { personal } from '$lib/data/resume';
+	import CaptchaModal from './CaptchaModal.svelte';
+
+	let captchaOpen = $state(false);
 </script>
 
 <section id="about" class="hero">
@@ -20,11 +23,9 @@
 		<p class="summary">{personal.summary}</p>
 
 		<div class="actions">
-			<a
-				href="/Matthew_Ostrowski_Resume.pdf"
+			<button
 				class="btn btn-primary"
-				target="_blank"
-				rel="noopener noreferrer"
+				onclick={() => (captchaOpen = true)}
 			>
 				<svg
 					width="16"
@@ -42,7 +43,7 @@
 					<line x1="12" y1="15" x2="12" y2="3" />
 				</svg>
 				Resume
-			</a>
+			</button>
 			<a
 				href={personal.linkedin}
 				class="btn btn-ghost"
@@ -90,6 +91,8 @@
 		</div>
 	</div>
 </section>
+
+<CaptchaModal bind:open={captchaOpen} />
 
 <style>
 	.hero {

@@ -7,9 +7,9 @@
 	--text: #e0ddd8;
 	--text-muted: #94929a;
 	--text-dim: #6b6972;
-	--accent: #7f5af0;
-	--accent-hover: #a78bfa;
-	--accent-glow: rgba(127, 90, 240, 0.15);
+	--accent: #00a0e0;
+	--accent-hover: #38bdf8;
+	--accent-glow: rgba(0, 160, 224, 0.15);
 	--font-mono: 'JetBrains Mono', 'Consolas', 'Monaco', monospace;
 	--font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 	--radius: 8px;

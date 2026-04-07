@@ -142,7 +142,7 @@ function challengePage(message?: string) {
     gap: 0.5rem;
     margin-bottom: 1rem;
   }
-  .prompt { color: #7f5af0; font-size: 1rem; }
+  .prompt { color: #00a0e0; font-size: 1rem; }
   .title { font-size: 1rem; font-weight: 600; }
   .description {
     font-size: 0.82rem;
@@ -160,7 +160,7 @@ function challengePage(message?: string) {
     text-align: center;
     margin-top: 1rem;
   }
-  .status.verifying { color: #7f5af0; }
+  .status.verifying { color: #00a0e0; }
   .status.error { color: #ef4444; }
   .back-link {
     display: block;
@@ -170,7 +170,7 @@ function challengePage(message?: string) {
     color: #94929a;
     text-decoration: none;
   }
-  .back-link:hover { color: #7f5af0; }
+  .back-link:hover { color: #00a0e0; }
 </style>
 </head>
 <body>

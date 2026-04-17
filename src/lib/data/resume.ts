@@ -49,6 +49,10 @@ export interface Project {
 	description: string;
 	tags: string[];
 	highlight?: string;
+	links?: {
+		github?: string;
+		googlePlay?: string;
+	};
 }
 
 export const projects: Project[] = [
@@ -57,14 +61,21 @@ export const projects: Project[] = [
 		description:
 			'Built and published a Japanese reading app with offline dictionary lookup via MeCab tokenization, vocabulary tracking with Anki export, and localization in 4 languages across 40+ releases.',
 		tags: ['Flutter', 'Dart', 'Riverpod', 'SQLite'],
-		highlight: 'Google Play'
+		highlight: 'Google Play',
+		links: {
+			github: 'https://github.com/mostrowski123/mekuru',
+			googlePlay: 'https://play.google.com/store/apps/details?id=moe.matthew.mekuru'
+		}
 	},
 	{
 		title: 'Mekuru OCR Server',
 		description:
 			'Companion OCR server using ML models for manga text detection and recognition, with Docker containerization for GPU-accelerated deployment and Firebase Cloud Functions for service orchestration.',
 		tags: ['Python', 'FastAPI', 'Docker', 'Firebase', 'TypeScript'],
-		highlight: 'GPU ML'
+		highlight: 'GPU ML',
+		links: {
+			github: 'https://github.com/mostrowski123/mekuru-ocr'
+		}
 	},
 	{
 		title: 'Notification Engine',
